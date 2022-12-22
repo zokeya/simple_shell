@@ -31,8 +31,8 @@
 #define USE_GETLINE 0
 #define USE_STRTOK 0
 
-#define HIST_FILE	".simple_shell_history"
 #define HIST_MAX	4096
+#define HIST_FILE	".simple_shell_history"
 
 extern char **environ;
 
@@ -51,8 +51,8 @@ typedef struct liststr
 } list_t;
 
 /**
- *struct passinfo - contains pseudo-arguements to pass into a function,
- *		allowing uniform prototype for function pointer struct
+ *struct passinfo - pseudo-arguements to pass into a function
+ *allowing uniform prototype for function pointer struct
  *@arg: a string generated from getline containing arguements
  *@argv: an array of strings generated from arg
  *@path: a string path for the current command
